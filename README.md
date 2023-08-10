@@ -26,6 +26,7 @@ Download from release and simply install and run
 * Automatic deployment via Github actions
 * Add some themes
 * Convert to TypeScript
+* Let me think...
 
 ## How to contribute?
 * First discuss the issue by creating a new issue. 
