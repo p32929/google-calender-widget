@@ -22,6 +22,11 @@ Download from release and simply install and run
 2. Login using google
 3. Done!
 
+## Todos
+* Automatic deployment via Github actions
+* Add some themes
+* Convert to TypeScript
+
 ## How to contribute?
 * First discuss the issue by creating a new issue. 
 * Don't make pull requests by changing the readme file without discussing.
