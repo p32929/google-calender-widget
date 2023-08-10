@@ -1,7 +1,16 @@
 ## google-calender-widget
 An unofficial google calendar desktop widget for Windows, Mac and Linux
 
-![google-calender-widget](https://github.com/p32929/google-calender-widget/assets/6418354/f72e2741-31e8-493c-9ba1-3ab9f76a891a)
+## Features
+### Day view
+![Day](https://github.com/p32929/google-calender-widget/assets/6418354/85631140-dee7-403d-8b9d-a6ce1093dc6b)
+
+
+### Month view
+![Month](https://github.com/p32929/google-calender-widget/assets/6418354/3eb31f9c-7a0a-465e-93f2-6c0769073247)
+
+### Tray menu
+![Tray](https://github.com/p32929/google-calender-widget/assets/6418354/da4615a3-8dab-4b8e-829f-0db7cad78900)
 
 ## Share with your friends and family
 
@@ -15,7 +24,7 @@ An unofficial google calendar desktop widget for Windows, Mac and Linux
 [![tumblr](https://user-images.githubusercontent.com/6418354/179013343-3111f55a-3b90-40c7-8487-9777348672b0.png)](https://www.tumblr.com/share?v=3&u=https://github.com/p32929/google-calender-widget)
 
 ## How to install
-Download from release and simply install and run
+Download from release ( https://github.com/p32929/google-calender-widget/releases/tag/1.0.1 ) and simply install and run
 
 ## How to use
 1. Open the app
