@@ -2,7 +2,7 @@
   "name": "google-calender-widget",
   "version": "1.0.0",
   "main": "index.js",
-  "description": "An unofficial google calendar desktop widget for all Windows, Mac and Linux",
+  "description": "An unofficial google calendar desktop widget for Windows, Mac and Linux",
   "license": "MIT",
   "devDependencies": {
     "electron": "^25.5.0",
@@ -23,7 +23,6 @@
     "appId": "p32929.google-calender-widget",
     "productName": "google-calender-widget",
     "files": [
-      "node_modules/**/*",
       "**/**"
     ],
     "extraResources": [
@@ -34,15 +33,15 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "resources/media/icon.ico"
+      "icon": "resources/media/icon.png"
     },
     "mac": {
       "category": "p32929.google-calender-widget",
-      "icon": "resources/media/icon.ico"
+      "icon": "resources/media/icon.png"
     },
     "linux": {
       "category": "p32929.google-calender-widget",
-      "icon": "resources/media/icon.ico",
+      "icon": "resources/media/icon.png",
       "target": {
         "target": "appimage",
         "arch": [

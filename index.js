@@ -24,7 +24,7 @@ const createWindow = () => {
         maximizable: false,
         minimizable: false,
         icon: iconPath,
-        
+
         skipTaskbar: !isDevelopment,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
@@ -97,6 +97,11 @@ const createTray = (mainWindow) => {
 
     // Create a context menu
     const contextMenu = Menu.buildFromTemplate([
+        {
+            label: 'Reload', click: () => {
+                mainWindow.reload()
+            }
+        },
         {
             label: 'Logout', click: () => {
                 session.defaultSession.clearStorageData()
