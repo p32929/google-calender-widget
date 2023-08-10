@@ -1,0 +1,12 @@
+{
+  "name": "gcw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^25.5.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  }
+}
