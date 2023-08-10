@@ -23,15 +23,15 @@
     "productName": "google-calender-widget",
     "win": {
       "target": "nsis",
-      "icon": "assets/icon.ico"
+      "icon": "assets/icon.png"
     },
     "mac": {
       "category": "p32929.google-calender-widget",
-      "icon": "assets/icon.ico"
+      "icon": "assets/icon.png"
     },
     "linux": {
       "category": "p32929.google-calender-widget",
-      "icon": "assets/icon.ico",
+      "icon": "assets/icon.png",
       "target": {
         "target": "appimage",
         "arch": [
