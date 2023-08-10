@@ -1,7 +1,7 @@
 ## google-calender-widget
 An unofficial google calendar desktop widget for Windows, Mac and Linux
 
-![siin](https://github.com/p32929/google-calender-widget/assets/6418354/c6920f4a-f271-4e34-aeab-9811039a9a0e)
+![google-calender-widget](https://github.com/eclipse-theia/theia/assets/141199081/ca6fed2e-ac02-4af3-ab4a-faf98320a578)
 
 ## Share with your friends and family
 
