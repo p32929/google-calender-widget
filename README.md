@@ -31,6 +31,10 @@ Download from release and simply install and run
 * First discuss the issue by creating a new issue. 
 * Don't make pull requests by changing the readme file without discussing.
 
+## Changelogs
+### 1.0.1
+* initial release
+
 ## License
 ```
 MIT License
