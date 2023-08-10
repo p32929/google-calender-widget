@@ -2,9 +2,17 @@
 const path = require('path')
 const { app, BrowserWindow, Menu, nativeImage, session, Tray } = require('electron')
 const { windowStateKeeper } = require("./stateKeeper")
-const isDevelopment = process.env.NODE_ENV !== "production";
+// const isDevelopment = process.env.NODE_ENV !== "production";
+const isDevelopment = require("electron-is-dev");
 
-const iconPath = isDevelopment ? path.join('assets', 'icon.png') : path.resolve(app.getAppPath(), 'assets', 'icon.png');
+// const iconPath = isDevelopment ? path.join('assets', 'icon.png') : path.resolve(app.getAppPath(), 'assets', 'icon.png');
+const iconPath = path.join(
+    isDevelopment ? process.cwd() + "/resources" : process.resourcesPath,
+    "media",
+    "icon.ico"
+)
+console.log(`iconPath: ${iconPath}`)
+
 const CALENDER_MOBILE = `https://calendar.google.com/calendar/u/0/gp?hl=en#~calendar:view=a`
 
 // modify your existing createWindow() function
@@ -16,9 +24,10 @@ const createWindow = () => {
         maximizable: false,
         minimizable: false,
         icon: iconPath,
+        
         skipTaskbar: !isDevelopment,
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js')
+            preload: path.join(__dirname, 'preload.js'),
         }
     })
 
@@ -82,7 +91,6 @@ const createWindow = () => {
 const createTray = (mainWindow) => {
     // Load your tray icon image
     const trayIcon = nativeImage.createFromPath(iconPath);
-    console.log(`iconPath: ${iconPath}`)
 
     // Create the tray
     const tray = new Tray(trayIcon);

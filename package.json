@@ -10,6 +10,7 @@
     "nodemon": "^3.0.1"
   },
   "dependencies": {
+    "electron-is-dev": "^2.0.0",
     "electron-settings": "^4.0.2"
   },
   "scripts": {
@@ -21,17 +22,27 @@
   "build": {
     "appId": "p32929.google-calender-widget",
     "productName": "google-calender-widget",
+    "files": [
+      "node_modules/**/*",
+      "**/**"
+    ],
+    "extraResources": [
+      {
+        "from": "./resources/",
+        "to": "./"
+      }
+    ],
     "win": {
       "target": "nsis",
-      "icon": "assets/icon.png"
+      "icon": "resources/media/icon.ico"
     },
     "mac": {
       "category": "p32929.google-calender-widget",
-      "icon": "assets/icon.png"
+      "icon": "resources/media/icon.ico"
     },
     "linux": {
       "category": "p32929.google-calender-widget",
-      "icon": "assets/icon.png",
+      "icon": "resources/media/icon.ico",
       "target": {
         "target": "appimage",
         "arch": [
