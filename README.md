@@ -15,15 +15,12 @@ An unofficial google calendar desktop widget for Windows, Mac and Linux
 [![tumblr](https://user-images.githubusercontent.com/6418354/179013343-3111f55a-3b90-40c7-8487-9777348672b0.png)](https://www.tumblr.com/share?v=3&u=https://github.com/p32929/google-calender-widget)
 
 ## How to install
-Download from release and simply install
+Download from release and simply install and run
 
 ## How to use
 1. Open the app
 2. Login using google
 3. Done!
-
-## Roadmap
-
 
 ## How to contribute?
 * First discuss the issue by creating a new issue. 
