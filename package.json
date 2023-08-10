@@ -1,16 +1,43 @@
 {
-  "name": "gcw",
+  "name": "google-calender-widget",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "An unofficial google calendar desktop widget for all Windows, Mac and Linux",
   "license": "MIT",
   "devDependencies": {
     "electron": "^25.5.0",
+    "electron-builder": "^24.6.3",
     "nodemon": "^3.0.1"
   },
   "dependencies": {
     "electron-settings": "^4.0.2"
   },
   "scripts": {
-    "start": "nodemon --exec \"electron . node --inspect\""
+    "start": "nodemon --exec \"electron . node --inspect\"",
+    "dist:win": "electron-builder --win",
+    "dist:linux": "electron-builder --linux",
+    "dist:mac": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "p32929.google-calender-widget",
+    "productName": "google-calender-widget",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "category": "p32929.google-calender-widget",
+      "icon": "assets/icon.ico"
+    },
+    "linux": {
+      "category": "p32929.google-calender-widget",
+      "icon": "assets/icon.ico",
+      "target": {
+        "target": "appimage",
+        "arch": [
+          "x64"
+        ]
+      }
+    }
   }
 }
