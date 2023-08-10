@@ -13,6 +13,7 @@ const iconPath = path.join(
 )
 console.log(`iconPath: ${iconPath}`)
 
+// const CALENDER_PC = `https://calendar.google.com/calendar/u/0/r`
 const CALENDER_MOBILE = `https://calendar.google.com/calendar/u/0/gp?hl=en#~calendar:view=a`
 
 // modify your existing createWindow() function
@@ -39,7 +40,7 @@ const createWindow = () => {
 
     mainWindow.webContents.on("will-navigate", (e, url) => {
         console.log(`will-navigate`, url)
-        if (url.includes(`https://accounts.google.com/`)) {
+        if (url.includes(`https://accounts.google.com/CheckCookie`)) { 
             setTimeout(() => {
                 mainWindow.loadURL(CALENDER_MOBILE)
             }, 1500)
@@ -100,6 +101,11 @@ const createTray = (mainWindow) => {
         {
             label: 'Reload', click: () => {
                 mainWindow.reload()
+            }
+        },
+        {
+            label: 'Fix', click: () => {
+                mainWindow.loadURL(CALENDER_MOBILE)
             }
         },
         {
