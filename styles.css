@@ -1,0 +1,13 @@
+.el-summary {
+    background-color: hsl(222.2 84% 4.9%) !important;
+    /* background-color: black !important; */
+    color: white !important;
+}
+
+.el-source {
+    color: hsl(215 20.2% 65.1%) !important;
+}
+
+.el-title {
+    font-weight: normal !important;
+}

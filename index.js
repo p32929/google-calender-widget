@@ -4,6 +4,7 @@ const { app, BrowserWindow, Menu, nativeImage, session, Tray } = require('electr
 const { windowStateKeeper } = require("./stateKeeper")
 // const isDevelopment = process.env.NODE_ENV !== "production";
 const isDevelopment = require("electron-is-dev");
+const { readFileSync } = require('fs');
 
 // const iconPath = isDevelopment ? path.join('assets', 'icon.png') : path.resolve(app.getAppPath(), 'assets', 'icon.png');
 const iconPath = path.join(
@@ -46,6 +47,9 @@ const createWindow = () => {
             }, 1500)
         }
     })
+
+    const styles = readFileSync(`./styles.css`).toString()
+    mainWindow.webContents.insertCSS(styles)
 
     windowStateKeeper('main')
         .then((mwk) => {
