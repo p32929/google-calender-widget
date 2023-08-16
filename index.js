@@ -107,11 +107,6 @@ const createTray = (mainWindow) => {
                 mainWindow.reload()
             }
         },
-        // {
-        //     label: 'Fix', click: () => {
-        //         mainWindow.loadURL(CALENDER_MOBILE)
-        //     }
-        // },
         {
             label: 'Logout', click: () => {
                 session.defaultSession.clearStorageData()
