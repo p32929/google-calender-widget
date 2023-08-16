@@ -22,7 +22,7 @@ const createWindow = () => {
     const mainWindow = new BrowserWindow({
         height: 480,
         width: 320,
-        maxWidth: 320,
+        
         maximizable: false,
         minimizable: false,
         icon: iconPath,
