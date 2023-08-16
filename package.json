@@ -33,15 +33,15 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "resources/media/icon.png"
+      "icon": "resources/icon.png"
     },
     "mac": {
       "category": "p32929.google-calender-widget",
-      "icon": "resources/media/icon.png"
+      "icon": "resources/icon.png"
     },
     "linux": {
       "category": "p32929.google-calender-widget",
-      "icon": "resources/media/icon.png",
+      "icon": "resources/icon.png",
       "target": {
         "target": "appimage",
         "arch": [

@@ -9,7 +9,6 @@ const { readFileSync } = require('fs');
 // const iconPath = isDevelopment ? path.join('assets', 'icon.png') : path.resolve(app.getAppPath(), 'assets', 'icon.png');
 const iconPath = path.join(
     isDevelopment ? process.cwd() + "/resources" : process.resourcesPath,
-    "media",
     "icon.ico"
 )
 console.log(`iconPath: ${iconPath}`)
@@ -48,7 +47,11 @@ const createWindow = () => {
         }
     })
 
-    const styles = readFileSync(`./styles.css`).toString()
+    const stylesPath = path.join(
+        isDevelopment ? process.cwd() + "/resources" : process.resourcesPath,
+        "styles.css"
+    )
+    const styles = readFileSync(stylesPath).toString()
     mainWindow.webContents.insertCSS(styles)
 
     windowStateKeeper('main')
