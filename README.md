@@ -45,6 +45,10 @@ Download from release ( https://github.com/p32929/google-calender-widget/release
 ### 1.0.1
 * initial release
 
+### 1.0.2
+* Changed some styles
+* Hidden some more buttons
+
 ## License
 ```
 MIT License
