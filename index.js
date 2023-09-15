@@ -7,14 +7,13 @@ const isDevelopment = require("electron-is-dev");
 const { readFileSync } = require('fs');
 
 // const iconPath = isDevelopment ? path.join('assets', 'icon.png') : path.resolve(app.getAppPath(), 'assets', 'icon.png');
-const iconPath = path.join(
+const iconPath = path.join( 
     isDevelopment ? process.cwd() + "/resources" : process.resourcesPath,
     "icon.ico"
 )
 console.log(`iconPath: ${iconPath}`)
 
-// const CALENDER_PC = `https://calendar.google.com/calendar/u/0/r`
-const CALENDER_MOBILE = `https://calendar.google.com/calendar/u/0/gp?hl=en#~calendar:view=a`
+const CALENDER_HOME = `https://calendar.google.com/calendar/u/0/r`
 
 // modify your existing createWindow() function
 const createWindow = () => {
@@ -32,7 +31,7 @@ const createWindow = () => {
         }
     })
 
-    mainWindow.loadURL(CALENDER_MOBILE);
+    mainWindow.loadURL(CALENDER_HOME);
     mainWindow.webContents.setWindowOpenHandler(({ url }) => {
         mainWindow.loadURL(url)
         return { action: 'deny' };
@@ -40,11 +39,11 @@ const createWindow = () => {
 
     mainWindow.webContents.on("will-navigate", (e, url) => {
         console.log(`will-navigate`, url)
-        if (url.includes(`https://accounts.google.com/CheckCookie`)) { 
-            setTimeout(() => {
-                mainWindow.loadURL(CALENDER_MOBILE)
-            }, 1500)
-        }
+        // if (url.includes(`https://accounts.google.com/CheckCookie`)) { 
+        //     setTimeout(() => {
+        //         mainWindow.loadURL(CALENDER_HOME)
+        //     }, 1500)
+        // }
     })
 
     const stylesPath = path.join(
@@ -114,7 +113,7 @@ const createTray = (mainWindow) => {
             label: 'Logout', click: () => {
                 session.defaultSession.clearStorageData()
                     .then(() => {
-                        mainWindow.loadURL(CALENDER_MOBILE)
+                        mainWindow.loadURL(CALENDER_HOME)
                     })
                     .catch((e) => {
                         console.log(`clearStorageData`, e)
