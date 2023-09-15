@@ -3,7 +3,7 @@ An unofficial google calendar desktop widget for Windows, Mac and Linux
 
 ## Features
 ### Agenda View + Dark mode
-![Screenshot (77)](https://github.com/p32929/google-calender-widget/assets/6418354/fc0cb9e4-1e1d-4abe-88f4-1b2d9e888410)
+![Screenshot (78)](https://github.com/p32929/google-calender-widget/assets/6418354/43f8074d-2d81-47d8-aba6-982c9bf637f3)
 
 ### Tray menu
 ![Tray](https://github.com/p32929/google-calender-widget/assets/6418354/da4615a3-8dab-4b8e-829f-0db7cad78900)
