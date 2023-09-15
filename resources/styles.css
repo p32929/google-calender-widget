@@ -1,3 +1,22 @@
+/* ==UserStyle==
+@name        Dark Google Calendar Fay
+@namespace   pyxelr
+@version     2.7.16
+@homepageURL https://github.com/pyxelr/dark-google-calendar
+@supportURL  https://github.com/pyxelr/dark-google-calendar/issues
+@updateURL   https://github.com/pyxelr/dark-google-calendar/raw/master/Google-DarkCalendar.user.css
+@license     MIT
+@author      pyxelr
+
+@var color   font-color-next-events                        "Font color of next events"                       #000000
+@var color   font-color-past-events                        "Font color of past events"                       #404040
+@var color   font-color-events-month-view-with-time        "Font color of month view events with time"       #666666
+@var color   font-color-next-events-week-view-with-time    "Font color of next week view events with time"   #000000
+@var color   font-color-past-events-week-view-with-time    "Font color of past week view events with time"   #000000
+==/UserStyle== */
+
+/* Invert the entire website */
+
 /* Invert the entire website */
 
 html {
@@ -21,8 +40,7 @@ img {
 
 .YqtBEc,
 .xuBVOe {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Dark blue top of the right-hand panel and black text */
@@ -30,8 +48,7 @@ img {
 .CflnFb {
   background-color: #7b96c1 !important;
 
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 
   color: white !important;
 }
@@ -53,8 +70,7 @@ img {
 
   color: white !important;
 
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* "View recently deleted items" color */
@@ -74,8 +90,7 @@ img {
 /* Inversion of event action pop-up (saved, updated, deleted, etc.)*/
 
 .Mh0NNb {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Color of event action pop-up (saved, updated, deleted, etc.)*/
@@ -103,8 +118,7 @@ img {
 }
 
 .ck4bY {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Update to white color of the icons next to the avatar */
@@ -123,8 +137,7 @@ img {
 .gsoi.gsoi_c.asor_v,
 .gsoi.gsoi_9.asor_v,
 .gsoi.gsoi_7.asor_v {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Inversion of avatars in "Day" view */
@@ -142,8 +155,7 @@ img {
 /* Menu uninversion of uploading attachment from Google Drive (the ids are not static and this function doesn't always work) */
 
 .g3VIld.Wm6zM.Up8vH.Whe8ub.hFEqNb.J9Nfi.iWO5td {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Arrow color in the settings menu*/
@@ -184,8 +196,7 @@ img {
 /* "Choose custom color" menu */
 
 .g3VIld.GFhhge.Up8vH.hFEqNb.J9Nfi.iWO5td {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 
   background: rgb(25, 25, 25) !important;
 
@@ -207,8 +218,7 @@ img {
 /* "Moon phases" inversion */
 
 .st-wc {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Time of the events we were invited to (in the week view) */
@@ -222,8 +232,7 @@ img {
 .g3dbUc .jKgTF,
 .QGRmIf,
 .lcPUt {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 
   font-weight: bold !important;
 
@@ -233,15 +242,13 @@ img {
 /* Past events in the month view */
 
 .g3dbUc.UflSff {
-  filter: invert(100%) hue-rotate(180deg) saturate(140%) contrast(105%)
-    opacity(40%) !important;
+  filter: invert(100%) hue-rotate(180deg) saturate(140%) contrast(105%) opacity(40%) !important;
 }
 
 /* Past events in the week view */
 
 .NlL62b.EfQccc.elYzab-cXXICe-Hjleke.EiZ8Dd.UflSff.jKgTF {
-  filter: invert(100%) hue-rotate(180deg) saturate(140%) contrast(50%)
-    brightness(140%) opacity(90%) !important;
+  filter: invert(100%) hue-rotate(180deg) saturate(140%) contrast(50%) brightness(140%) opacity(90%) !important;
 }
 
 /* Past events in the week view (reapplication of opacity) */
@@ -253,29 +260,25 @@ img {
 /* Events in the week view */
 
 .NlL62b.EfQccc.elYzab-cXXICe-Hjleke.EiZ8Dd {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Inversion of event colors in the pop-up view coming after right-clicking the event in the month view */
 
 .a63c9c.ztKZ3d {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Inversion of event colors in the main event view */
 
 .a63c9c {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Event color in "4 days" view" */
 
 .NlL62b.EfQccc.elYzab-cXXICe-Hjleke.EiZ8Dd.jKgTF {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 
   font-weight: bold !important;
 }
@@ -283,44 +286,38 @@ img {
 /* Color of events in the "Schedule" view */
 
 .Oxm52e {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Event color in the view of adding a task */
 
 .kImhzd {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Event color in the settings menu */
 
 .hsrazb {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Text and color in the pop-up view coming after left-clicking the event in the month view */
 
 .Tnsqdc,
 .kw5sif {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Pen icon in the pop-up view coming after left-clicking the event in the month view */
 
 .kXIDId {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Color of calendar in the pop-up menu of month view */
 
 .sIyjR {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Inversion of attachment frame */
@@ -332,29 +329,25 @@ img {
 /* Inversion of attachment icon */
 
 .ghXZpb {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Inversion of the icons in the right-hand menu */
 
 .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(120%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(120%) contrast(105%) !important;
 }
 
 /* Inversion of the + icon (Get add-ons) in the right-hand menu */
 
 #qJTzr {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(120%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(120%) contrast(105%) !important;
 }
 
 /* Inversion of the event cover image (like a dentist event) */
 
 .YrCd2b {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(120%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(120%) contrast(105%) !important;
 }
 
 /* ==== FONT ==== */
@@ -443,8 +436,7 @@ ghp-iconTextComponent:hover,
 
 #rAECCd,
 .jPtXgd {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 
   color: #b0b3b6;
 
@@ -460,8 +452,7 @@ ghp-iconTextComponent:hover,
 /* Input text of event creation pop-up menu */
 
 .whsOnd.zHQkBf {
-  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%)
-    contrast(105%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%) !important;
 }
 
 /* Text in the event description field */
@@ -543,4 +534,71 @@ ghp-iconTextComponent:hover,
   #map.map {
     filter: invert(100%) hue-rotate(180deg) brightness(1.1) contrast(105%) !important;
   }
+}
+
+/* Fay */
+
+/* Black text fix */
+.Jmftzc.EiZ8Dd {
+  color: #FFF;
+}
+
+/* Top bar */
+header[role="banner"] {
+  display: none !important;
+}
+
+/* some top paddings  */
+div[class="SGWAac"] {
+  padding-top: 16px !important;
+}
+
+/* Left thingies */
+div[class="dwlvNd"] {
+  display: none !important;
+}
+
+div[class="QQYuzf"] {
+  display: none !important;
+}
+
+/* Right thingies */
+div[class="SGWAac"]>div:nth-child(4) {
+  display: none !important;
+}
+
+div[aria-label="Hide side panel"] {
+  display: none !important;
+}
+
+/* time-bar */
+/* div[class="GPGavc"] {
+    display: none;
+} */
+
+div[class="taTyDe"] {
+  flex-direction: column !important;
+}
+
+.dtaVuc {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.p8Qosf {
+  padding-bottom: 8px !important;
+}
+
+.vXnnM {
+  width: 100% !important;
+  flex: auto !important;
+}
+
+/* Dialog */
+/* .JtukPc {
+  width: auto !important;
+} */
+
+.FzsTU {
+  width: auto !important;
 }

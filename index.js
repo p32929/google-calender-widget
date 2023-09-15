@@ -7,20 +7,30 @@ const isDevelopment = require("electron-is-dev");
 const { readFileSync } = require('fs');
 
 // const iconPath = isDevelopment ? path.join('assets', 'icon.png') : path.resolve(app.getAppPath(), 'assets', 'icon.png');
-const iconPath = path.join( 
+const iconPath = path.join(
     isDevelopment ? process.cwd() + "/resources" : process.resourcesPath,
     "icon.ico"
 )
 console.log(`iconPath: ${iconPath}`)
 
-const CALENDER_HOME = `https://calendar.google.com/calendar/u/0/r`
+const CALENDER_HOME = `https://calendar.google.com/calendar/u/0/r/agenda`
+
+const setHomeCss = (mainWindow) => {
+    const stylesPath = path.join(
+        isDevelopment ? process.cwd() + "/resources" : process.resourcesPath,
+        "styles.css"
+    )
+    const styles = readFileSync(stylesPath).toString()
+    mainWindow.webContents.insertCSS(styles)
+    console.log(`CSS Set`)
+}
 
 // modify your existing createWindow() function
 const createWindow = () => {
     const mainWindow = new BrowserWindow({
         height: 480,
         width: 320,
-        
+
         maximizable: false,
         minimizable: false,
         icon: iconPath,
@@ -43,16 +53,13 @@ const createWindow = () => {
         //     setTimeout(() => {
         //         mainWindow.loadURL(CALENDER_HOME)
         //     }, 1500)
-        // }
+        // } 
+        if (url === CALENDER_HOME || url.includes(CALENDER_HOME)) {
+            setHomeCss(mainWindow)
+        }
     })
 
-    const stylesPath = path.join(
-        isDevelopment ? process.cwd() + "/resources" : process.resourcesPath,
-        "styles.css"
-    )
-    const styles = readFileSync(stylesPath).toString()
-    mainWindow.webContents.insertCSS(styles)
-
+    setHomeCss(mainWindow)
     windowStateKeeper('main')
         .then((mwk) => {
             if (mwk) {
@@ -106,7 +113,12 @@ const createTray = (mainWindow) => {
     const contextMenu = Menu.buildFromTemplate([
         {
             label: 'Reload', click: () => {
-                mainWindow.reload()
+                // mainWindow.reload()
+                // mainWindow.loadURL(CALENDER_HOME);
+                // setHomeCss(mainWindow)
+
+                app.relaunch()
+                app.exit()
             }
         },
         {
@@ -138,7 +150,7 @@ const createTray = (mainWindow) => {
     tray.on('click', () => {
         mainWindow.show();
     });
-    
+
     console.log(`Tray icon added`)
 };
 
