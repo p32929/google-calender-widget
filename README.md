@@ -2,12 +2,8 @@
 An unofficial google calendar desktop widget for Windows, Mac and Linux
 
 ## Features
-### Day view
-![Day](https://github.com/p32929/google-calender-widget/assets/6418354/85631140-dee7-403d-8b9d-a6ce1093dc6b)
-
-
-### Month view
-![Month](https://github.com/p32929/google-calender-widget/assets/6418354/3eb31f9c-7a0a-465e-93f2-6c0769073247)
+### Agenda View + Dark mode
+![Screenshot (77)](https://github.com/p32929/google-calender-widget/assets/6418354/fc0cb9e4-1e1d-4abe-88f4-1b2d9e888410)
 
 ### Tray menu
 ![Tray](https://github.com/p32929/google-calender-widget/assets/6418354/da4615a3-8dab-4b8e-829f-0db7cad78900)
@@ -33,7 +29,6 @@ Download from release ( https://github.com/p32929/google-calender-widget/release
 
 ## Todos
 * Automatic deployment via Github actions
-* Add some themes
 * Convert to TypeScript
 * Let me think...
 
