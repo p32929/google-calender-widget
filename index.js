@@ -55,7 +55,7 @@ const createWindow = () => {
         //     }, 1500)
         // } 
         if (url === CALENDER_HOME || url.includes(CALENDER_HOME)) {
-            setHomeCss(mainWindow)
+            setHomeCss(mainWindow) 
         }
     })
 
