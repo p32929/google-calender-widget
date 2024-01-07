@@ -563,51 +563,48 @@ div[class="QQYuzf"] {
 }
 
 /* Right thingies */
-div[class="SGWAac"]>div:nth-child(4) {
+div[aria-label="Side panel"] {
   display: none !important;
-}
-
-div[aria-label="Hide side panel"] {
-  display: none !important;
-}
-
-/* time-bar */
-/* div[class="GPGavc"] {
-    display: none;
-} */
-
-div[class="taTyDe"] {
-  flex-direction: column !important;
-}
-
-.dtaVuc {
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-}
-
-.p8Qosf {
-  padding-bottom: 8px !important;
-}
-
-.vXnnM {
-  width: 100% !important;
-  flex: auto !important;
 }
 
 /* Dialog */
-.FzsTU {
+div[id="xDetDlg"] {
   width: auto !important;
 }
 
-.xrwLde {
-  width: auto !important;
+/* List */
+div[role="row"] {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
-.jefcFd {
+div[role="gridcell"] {
   width: auto !important;
+  height: 48px;
+  margin: 0;
 }
 
-/* List Height */
-div[class="lYYbjc"] {
-  height: 100vh !important;
+div[role="presentation"] {
+  height: auto !important;
+  margin: 0;
+}
+
+div[role="rowgroup"]>div[aria-hidden="true"] {
+  display: none;
+  margin: 0;
+}
+
+div[role="gridcell"] > div[role="button"]::before {
+  content: " > ";
+  white-space: pre;
+}
+
+div:has(div[role="main"]).SGWAac { /* Will fix it later */
+  height: 100% !important;
+}
+
+/* Hide sidebar button */
+div:has(>div[aria-label="Hide side panel"]) {
+  display: none !important;
 }

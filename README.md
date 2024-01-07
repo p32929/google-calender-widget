@@ -36,14 +36,6 @@ Download from release ( https://github.com/p32929/google-calender-widget/release
 * First discuss the issue by creating a new issue. 
 * Don't make pull requests by changing the readme file without discussing.
 
-## Changelogs
-### 1.0.1
-* initial release
-
-### 1.0.2
-* Changed some styles
-* Hidden some more buttons
-
 ## License
 ```
 MIT License
