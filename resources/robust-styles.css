@@ -74,7 +74,7 @@ div[id="xDetDlg"] {
 }
 
 /* Make event list more mobile-friendly */
-div[role="row"],
+div[data-gcw-row],
 div[data-gcw-row] {
   display: flex;
   flex-direction: column;
@@ -82,7 +82,7 @@ div[data-gcw-row] {
   padding: 0 !important;
 }
 
-div[role="gridcell"],
+div[data-gcw-gridcell],
 div[data-gcw-gridcell] {
   width: auto !important;
   height: auto !important;
@@ -93,7 +93,7 @@ div[data-gcw-gridcell] {
   align-items: center !important;
 }
 
-div[role="presentation"],
+div[data-gcw-presentation],
 div[data-gcw-presentation] {
   height: auto !important;
   margin: 0;
@@ -101,7 +101,7 @@ div[data-gcw-presentation] {
 }
 
 /* Fix for the divider line - ensure it's visible */
-div[aria-hidden="true"].uVnp9b,
+div[data-gcw-divider],
 div[data-gcw-divider],
 div[data-gcw-fixed="true"] {
   display: block !important;
@@ -114,13 +114,13 @@ div[data-gcw-fixed="true"] {
 }
 
 /* Only hide specific aria-hidden elements that aren't dividers */
-div[role="rowgroup"] > div[aria-hidden="true"]:not(.uVnp9b):not([data-gcw-divider]):not([data-gcw-fixed="true"]) {
+div[role="rowgroup"] > div[aria-hidden="true"]:not([data-gcw-divider]):not([data-gcw-fixed="true"]) {
   display: none;
   margin: 0;
 }
 
 /* Improve event indicators */
-div[role="gridcell"] > div[role="button"]::before,
+div[data-gcw-gridcell] > div[data-gcw-button]::before,
 div[data-gcw-gridcell] > div[data-gcw-button]::before {
   content: "›";
   white-space: pre;
@@ -164,7 +164,7 @@ div:has(>div[aria-label="Hide side panel"]) {
 }
 
 /* Improve event visibility */
-.NlL62b.EfQccc.elYzab-cXXICe-Hjleke.EiZ8Dd,
+[data-gcw-event].EfQccc.elYzab-cXXICe-Hjleke.EiZ8Dd,
 [data-gcw-event] {
   padding: 2px 8px !important;
   border-radius: 4px !important;
@@ -253,8 +253,8 @@ input, textarea, select {
 
 /* Improve alignment of event text */
 .g3dbUc .jKgTF, 
-.Jmftzc.EiZ8Dd,
-.Jmftzc.gVNoLb,
+[data-gcw-event-title],
+[data-gcw-event-time],
 [data-gcw-event-title],
 [data-gcw-event-time] {
   display: inline-flex !important;
@@ -263,7 +263,7 @@ input, textarea, select {
 }
 
 /* Improve event time display */
-.Jmftzc.gVNoLb,
+[data-gcw-event-time],
 [data-gcw-event-time] {
   margin-right: 4px !important;
 }
@@ -301,7 +301,7 @@ input, textarea, select {
 }
 
 /* Compact date header */
-.r4nke,
+[data-gcw-date-section],
 [data-gcw-date-section] {
   margin: 4px 0 0 0 !important;
   padding: 2px 0 !important;
@@ -314,7 +314,7 @@ input, textarea, select {
 }
 
 /* Fix date circle button to be perfectly circular */
-button.nUt0vb.H3yh2e.ubOFEd,
+button[data-gcw-date-circle].H3yh2e.ubOFEd,
 button[data-gcw-date-circle],
 .nUt0vb.H3yh2e.ubOFEd {
   width: 36px !important;
@@ -338,7 +338,7 @@ button[data-gcw-date-circle],
 }
 
 /* Fix the date number inside the circle */
-button.nUt0vb.H3yh2e.ubOFEd .x5FT4e,
+button[data-gcw-date-circle].H3yh2e.ubOFEd .x5FT4e,
 button[data-gcw-date-circle] .x5FT4e,
 .nUt0vb.H3yh2e.ubOFEd .x5FT4e {
   display: flex !important;
@@ -360,7 +360,7 @@ button[data-gcw-date-circle] .x5FT4e,
 
 /* Ensure the date circle container doesn't affect the shape */
 .W6eDmd,
-div:has(> button.nUt0vb.H3yh2e.ubOFEd),
+div:has(> button[data-gcw-date-circle].H3yh2e.ubOFEd),
 div:has(> button[data-gcw-date-circle]) {
   display: flex !important;
   align-items: center !important;
@@ -378,7 +378,7 @@ div:has(> button[data-gcw-date-circle]) {
 }
 
 /* Target the date sections */
-.r4nke-gvZm8e,
+[data-gcw-date-section]-gvZm8e,
 [data-gcw-date-section] {
   margin: 0 !important;
   padding: 0 !important;
@@ -414,7 +414,7 @@ div:has(> button[data-gcw-date-circle]) {
 }
 
 /* Target the event row */
-.Jmftzc.gVNoLb.EiZ8Dd,
+[data-gcw-event-time].EiZ8Dd,
 [data-gcw-event-time],
 [data-gcw-event-title] {
   margin: 0 !important;
@@ -424,7 +424,7 @@ div:has(> button[data-gcw-date-circle]) {
 /* Media queries for responsive design */
 @media (max-width: 600px) {
   /* Further optimize for very small screens */
-  .Jmftzc.EiZ8Dd,
+  [data-gcw-event-title],
   [data-gcw-event-title] {
     font-size: 13px !important;
   }
@@ -441,7 +441,7 @@ div:has(> button[data-gcw-date-circle]) {
   }
   
   /* Improve spacing on small screens */
-  div[role="gridcell"],
+  div[data-gcw-gridcell],
   div[data-gcw-gridcell] {
     padding: 2px 8px !important;
   }
