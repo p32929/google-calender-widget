@@ -6,7 +6,7 @@ An unofficial google calendar desktop widget for Windows, Mac and Linux
 ![Screenshot (78)](https://github.com/p32929/google-calender-widget/assets/6418354/43f8074d-2d81-47d8-aba6-982c9bf637f3)
 
 ### Tray menu
-![Tray](https://github.com/p32929/google-calender-widget/assets/6418354/da4615a3-8dab-4b8e-829f-0db7cad78900)
+![Tray](https://github.com/user-attachments/assets/056e36ab-a86e-4987-b73d-dd58974313fa)
 
 ## Share with your friends and family
 
