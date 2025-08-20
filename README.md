@@ -3,11 +3,11 @@
 <div align="center">
   <img src="https://github.com/p32929/google-calender-widget/assets/6418354/43f8074d-2d81-47d8-aba6-982c9bf637f3" alt="Google Calendar Widget" width="600"/>
   
-  **A lightweight, cross-platform desktop widget for Google Calendar**
+  **A lightweight desktop widget for Google Calendar on Windows**
   
   [![Release](https://img.shields.io/github/v/release/p32929/google-calender-widget?style=flat-square)](https://github.com/p32929/google-calender-widget/releases/latest)
   [![License](https://img.shields.io/github/license/p32929/google-calender-widget?style=flat-square)](LICENSE)
-  [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square)](https://github.com/p32929/google-calender-widget/releases)
+  [![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)](https://github.com/p32929/google-calender-widget/releases)
   [![Downloads](https://img.shields.io/github/downloads/p32929/google-calender-widget/total?style=flat-square)](https://github.com/p32929/google-calender-widget/releases)
 </div>
 
@@ -15,12 +15,12 @@
 
 - **📅 Multiple Calendar Views** - Agenda, Day, Week, Month, and Year views
 - **🌓 Dark Mode Support** - Automatic theme switching based on system preferences
-- **🔔 System Tray Integration** - Quick access from your system tray
+- **🔔 System Tray Integration** - Quick access from your Windows system tray
 - **🚀 Lightweight & Fast** - Minimal resource usage
 - **🔒 Secure Authentication** - OAuth 2.0 Google sign-in
 - **💾 Persistent Sessions** - Stay logged in between app restarts
-- **🖥️ Cross-Platform** - Works on Windows, macOS, and Linux
 - **🎨 Clean UI** - Modern, intuitive interface
+- **🖥️ Windows Native** - Built specifically for Windows desktop
 
 ## 📸 Screenshots
 
@@ -43,16 +43,16 @@
 ## 🚀 Installation
 
 ### Quick Install
-Download the latest version for your operating system from the [Releases page](https://github.com/p32929/google-calender-widget/releases/latest):
+Download the latest Windows installer from the [Releases page](https://github.com/p32929/google-calender-widget/releases/latest):
 
-- **Windows**: Download `.exe` installer
-- **macOS**: Download `.dmg` installer  
-- **Linux**: Download `.AppImage` or `.deb` package
+- Download the `.exe` installer file
+- Run the installer and follow the setup wizard
+- Launch Google Calendar Widget from your Start Menu or Desktop
 
 ### System Requirements
 - Windows 10 or later
-- macOS 10.14 (Mojave) or later
-- Ubuntu 18.04 or later (or equivalent Linux distribution)
+- Internet connection for Google Calendar sync
+- Google account with calendar access
 
 ## 📖 Usage
 
@@ -97,17 +97,11 @@ npm run dist
 
 ### Build Commands
 ```bash
-# Windows
+# Build for Windows
 npm run dist:win
 
-# macOS
-npm run dist:mac
-
-# Linux
-npm run dist:linux
-
-# All platforms
-npm run dist:all
+# Or use the general build command
+npm run dist
 ```
 
 ## 🤝 Contributing
