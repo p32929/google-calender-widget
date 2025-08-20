@@ -84,24 +84,21 @@ cd google-calender-widget
 
 # Install dependencies
 npm install
+# or
+yarn install
 
 # Run in development mode
 npm start
-
-# Build for production
-npm run build
-
-# Package for distribution
-npm run dist
+# or
+yarn start
 ```
 
 ### Build Commands
 ```bash
 # Build for Windows
 npm run dist:win
-
-# Or use the general build command
-npm run dist
+# or
+yarn dist:win
 ```
 
 ## 🤝 Contributing
