@@ -1180,7 +1180,7 @@ const createWindow = () => {
         icon: iconPath,
 
         skipTaskbar: !isDevelopment,
-        alwaysOnTop: !isDevelopment, // Only set alwaysOnTop in production mode
+        alwaysOnTop: false, // Never set the window to always be on top
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
         }
