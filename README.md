@@ -1,161 +1,40 @@
-# Google Calendar Widget
+## google-calender-widget
+An unofficial google calendar desktop widget for Windows, Mac and Linux
 
-<div align="center">
-  <img src="https://github.com/p32929/google-calender-widget/assets/6418354/43f8074d-2d81-47d8-aba6-982c9bf637f3" alt="Google Calendar Widget" width="600"/>
-  
-  **A lightweight desktop widget for Google Calendar on Windows**
-  
-  [![Release](https://img.shields.io/github/v/release/p32929/google-calender-widget?style=flat-square)](https://github.com/p32929/google-calender-widget/releases/latest)
-  [![License](https://img.shields.io/github/license/p32929/google-calender-widget?style=flat-square)](LICENSE)
-  [![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)](https://github.com/p32929/google-calender-widget/releases)
-  [![Downloads](https://img.shields.io/github/downloads/p32929/google-calender-widget/total?style=flat-square)](https://github.com/p32929/google-calender-widget/releases)
-</div>
+## Features
+### Agenda View + Dark mode
+![Screenshot (78)](https://github.com/p32929/google-calender-widget/assets/6418354/43f8074d-2d81-47d8-aba6-982c9bf637f3)
 
-## ✨ Features
+### Tray menu
+![Tray](https://github.com/user-attachments/assets/056e36ab-a86e-4987-b73d-dd58974313fa)
 
-- **📅 Multiple Calendar Views** - Agenda, Day, Week, Month, and Year views
-- **🌓 Dark Mode Support** - Automatic theme switching based on system preferences
-- **🔔 System Tray Integration** - Quick access from your Windows system tray
-- **🚀 Lightweight & Fast** - Minimal resource usage
-- **🔒 Secure Authentication** - OAuth 2.0 Google sign-in
-- **💾 Persistent Sessions** - Stay logged in between app restarts
-- **🎨 Clean UI** - Modern, intuitive interface
-- **🖥️ Windows Native** - Built specifically for Windows desktop
+## Share with your friends and family
 
-## 📸 Screenshots
+[![facebook](https://user-images.githubusercontent.com/6418354/179013321-ac1d1452-0689-493f-9066-940cf2302b6e.png)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/p32929/google-calender-widget)
+[![twitter](https://user-images.githubusercontent.com/6418354/179013351-7d8d6d1c-4ce2-46ab-bef8-4c4765a1b888.png)](https://twitter.com/intent/tweet?url=https://github.com/p32929/google-calender-widget)
+[![whatsapp](https://user-images.githubusercontent.com/6418354/179013353-f477fa0b-3e6f-4138-a357-c9991b23ff88.png)](https://api.whatsapp.com/send?text=https://github.com/p32929/google-calender-widget)
+[![linkedin](https://user-images.githubusercontent.com/6418354/179013327-ca7b7102-1da8-4b1c-858f-1a6e5f21bd70.png)](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/p32929/google-calender-widget)
+[![pinterest](https://user-images.githubusercontent.com/6418354/179013331-44cd9206-11b1-4b65-becb-5863b61c828f.png)](https://pinterest.com/pin/create/button/?url=https://github.com/p32929/google-calender-widget)
+[![reddit](https://user-images.githubusercontent.com/6418354/179013338-7416ae3f-73ba-4522-86e1-1374d7082d22.png)](https://www.reddit.com/submit?url=https://github.com/p32929/google-calender-widget)
+[![pocket](https://user-images.githubusercontent.com/6418354/179013334-b095c45f-becf-49f4-9ee1-5a731a9b1f85.png)](https://getpocket.com/save?url=https://github.com/p32929/google-calender-widget)
+[![tumblr](https://user-images.githubusercontent.com/6418354/179013343-3111f55a-3b90-40c7-8487-9777348672b0.png)](https://www.tumblr.com/share?v=3&u=https://github.com/p32929/google-calender-widget)
 
-### Calendar Views
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://github.com/p32929/google-calender-widget/assets/6418354/43f8074d-2d81-47d8-aba6-982c9bf637f3" width="300"/>
-      <br/>
-      <b>Agenda View (Dark Mode)</b>
-    </td>
-    <td align="center">
-      <img src="https://github.com/user-attachments/assets/056e36ab-a86e-4987-b73d-dd58974313fa" width="300"/>
-      <br/>
-      <b>System Tray Menu</b>
-    </td>
-  </tr>
-</table>
+## How to install
+Download from release ( https://github.com/p32929/google-calender-widget/releases/latest ) and simply install and run
 
-## 🚀 Installation
+## How to use
+1. Open the app
+2. Login using google
+3. Done!
 
-### Quick Install
-Download the latest Windows installer from the [Releases page](https://github.com/p32929/google-calender-widget/releases/latest):
+## Todos
+* Automatic deployment via Github actions
+* Convert to TypeScript
+* Let me think...
 
-- Download the `.exe` installer file
-- Run the installer and follow the setup wizard
-- Launch Google Calendar Widget from your Start Menu or Desktop
-
-### System Requirements
-- Windows 10 or later
-- Internet connection for Google Calendar sync
-- Google account with calendar access
-
-## 📖 Usage
-
-1. **Launch the application** after installation
-2. **Sign in with Google** when prompted
-3. **Grant calendar permissions** to access your events
-4. **Choose your preferred view** from the tray menu
-5. **Enjoy your calendar widget!** 
-
-### Tray Menu Options
-- **Show/Hide** - Toggle widget visibility
-- **Calendar Views** - Switch between Agenda, Day, Week, Month, Year
-- **Refresh** - Manually refresh calendar data
-- **Settings** - Configure app preferences
-- **Quit** - Exit the application
-
-## 🛠️ Development
-
-### Prerequisites
-- Node.js 16.x or later
-- npm or yarn
-- Git
-
-### Setup
-```bash
-# Clone the repository
-git clone https://github.com/p32929/google-calender-widget.git
-cd google-calender-widget
-
-# Install dependencies
-npm install
-# or
-yarn install
-
-# Run in development mode
-npm start
-# or
-yarn start
-```
-
-### Build Commands
-```bash
-# Build for Windows
-npm run dist:win
-# or
-yarn dist:win
-```
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
-3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
-4. **Push to the branch** (`git push origin feature/AmazingFeature`)
-5. **Open a Pull Request**
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-### Development Guidelines
-- Follow the existing code style
-- Write clear commit messages
-- Update documentation as needed
-- Add tests for new features
-- Ensure all tests pass before submitting PR
-
-## 🗺️ Roadmap
-
-- [ ] **GitHub Actions** - Automated builds and releases
-- [ ] **TypeScript Migration** - Better type safety and developer experience
-- [ ] **Custom Themes** - User-customizable color schemes
-- [ ] **Event Notifications** - Desktop notifications for upcoming events
-- [ ] **Multiple Account Support** - Switch between different Google accounts
-- [ ] **Offline Mode** - Cache events for offline viewing
-- [ ] **Keyboard Shortcuts** - Quick navigation and actions
-- [ ] **Event Creation** - Add new events directly from the widget
-- [ ] **Calendar Sync** - Support for other calendar services (Outlook, iCal)
-
-## 📝 Known Issues
-
-- Calendar may take a few seconds to load on first launch
-- Some calendar features require an active internet connection
-- Custom recurring events may not display correctly in some views
-
-## 🆘 Support
-
-Having issues? Try these steps:
-
-1. Check the [Issues page](https://github.com/p32929/google-calender-widget/issues) for existing solutions
-2. Ensure you have the latest version installed
-3. Try logging out and back in
-4. Clear app data and restart (Settings → Clear Data)
-5. Create a new issue with detailed information about your problem
-
-## 📣 Share
-
-If you find this project useful, please share it with others:
-
-[![Share on Facebook](https://img.shields.io/badge/Share-Facebook-1877F2?style=flat-square&logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/p32929/google-calender-widget)
-[![Share on Twitter](https://img.shields.io/badge/Share-Twitter-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/intent/tweet?url=https://github.com/p32929/google-calender-widget&text=Check%20out%20this%20awesome%20Google%20Calendar%20Widget!)
-[![Share on LinkedIn](https://img.shields.io/badge/Share-LinkedIn-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/p32929/google-calender-widget)
-[![Share on Reddit](https://img.shields.io/badge/Share-Reddit-FF4500?style=flat-square&logo=reddit)](https://www.reddit.com/submit?url=https://github.com/p32929/google-calender-widget)
+## How to contribute?
+* First discuss the issue by creating a new issue. 
+* Don't make pull requests by changing the readme file without discussing.
 
 ## License
 ```
@@ -181,4 +60,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
