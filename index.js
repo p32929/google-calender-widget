@@ -1,6 +1,6 @@
 // include the Node.js 'path' module at the top of your file
 const path = require('path')
-const { app, BrowserWindow, Menu, nativeImage, session, Tray } = require('electron')
+const { app, BrowserWindow, Menu, nativeImage, session, shell, Tray } = require('electron')
 const { windowStateKeeper } = require("./stateKeeper")
 // const isDevelopment = process.env.NODE_ENV !== "production";
 const isDevelopment = require("electron-is-dev");
@@ -1352,6 +1352,18 @@ const createTray = (mainWindow) => {
                 mainWindow.loadURL(CALENDAR_VIEWS.AGENDA)
             }
         },
+        { type: 'separator' },
+        {
+            label: 'Support this widget ☕', click: () => {
+                shell.openExternal('https://www.buymeacoffee.com/p32929')
+            }
+        },
+        {
+            label: 'Need a custom build?', click: () => {
+                shell.openExternal('https://p32929.github.io/hire/')
+            }
+        },
+        { type: 'separator' },
         {
             label: 'Quit', click: () => {
                 app.quit()
