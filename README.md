@@ -1,65 +1,79 @@
-## google-calender-widget
-An unofficial google calendar desktop widget for Windows, Mac and Linux
+# google-calender-widget
 
-## Features
+An unofficial Google Calendar desktop widget for Windows, macOS and Linux. It sits on your desktop, stays out of the way, and shows your real calendar — built with Electron.
+
 ### Agenda View + Dark mode
 ![Screenshot (78)](https://github.com/p32929/google-calender-widget/assets/6418354/43f8074d-2d81-47d8-aba6-982c9bf637f3)
 
 ### Tray menu
 ![Tray](https://github.com/user-attachments/assets/056e36ab-a86e-4987-b73d-dd58974313fa)
 
-## Share with your friends and family
+## Features
 
-[![facebook](https://user-images.githubusercontent.com/6418354/179013321-ac1d1452-0689-493f-9066-940cf2302b6e.png)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/p32929/google-calender-widget)
-[![twitter](https://user-images.githubusercontent.com/6418354/179013351-7d8d6d1c-4ce2-46ab-bef8-4c4765a1b888.png)](https://twitter.com/intent/tweet?url=https://github.com/p32929/google-calender-widget)
-[![whatsapp](https://user-images.githubusercontent.com/6418354/179013353-f477fa0b-3e6f-4138-a357-c9991b23ff88.png)](https://api.whatsapp.com/send?text=https://github.com/p32929/google-calender-widget)
-[![linkedin](https://user-images.githubusercontent.com/6418354/179013327-ca7b7102-1da8-4b1c-858f-1a6e5f21bd70.png)](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/p32929/google-calender-widget)
-[![pinterest](https://user-images.githubusercontent.com/6418354/179013331-44cd9206-11b1-4b65-becb-5863b61c828f.png)](https://pinterest.com/pin/create/button/?url=https://github.com/p32929/google-calender-widget)
-[![reddit](https://user-images.githubusercontent.com/6418354/179013338-7416ae3f-73ba-4522-86e1-1374d7082d22.png)](https://www.reddit.com/submit?url=https://github.com/p32929/google-calender-widget)
-[![pocket](https://user-images.githubusercontent.com/6418354/179013334-b095c45f-becf-49f4-9ee1-5a731a9b1f85.png)](https://getpocket.com/save?url=https://github.com/p32929/google-calender-widget)
-[![tumblr](https://user-images.githubusercontent.com/6418354/179013343-3111f55a-3b90-40c7-8487-9777348672b0.png)](https://www.tumblr.com/share?v=3&u=https://github.com/p32929/google-calender-widget)
+- **Your real Google Calendar** — logs into your own account, no third-party middleman
+- **Dark mode** and an agenda view that stays readable
+- **Tray menu** — show, hide, always-on-top and quit without hunting for the window
+- **Remembers its position and size** between launches
+- **Windows, macOS and Linux** builds from the same codebase
 
 ## How to install
-Download from release ( https://github.com/p32929/google-calender-widget/releases/latest ) and simply install and run
+
+Download the installer for your OS from the [latest release](https://github.com/p32929/google-calender-widget/releases/latest), install and run.
 
 ## How to use
+
 1. Open the app
-2. Login using google
+2. Login using Google
 3. Done!
 
+## Build from source
+
+```bash
+git clone https://github.com/p32929/google-calender-widget.git
+cd google-calender-widget
+npm install
+npm start          # run in dev with auto-reload
+
+npm run dist:win   # build a Windows installer
+npm run dist:mac   # build for macOS
+npm run dist:linux # build for Linux
+```
+
 ## Todos
+
 * Automatic deployment via Github actions
 * Convert to TypeScript
 * Let me think...
 
-## How to contribute?
-* First discuss the issue by creating a new issue. 
-* Don't make pull requests by changing the readme file without discussing.
-
 ## License
-```
-MIT License
 
-Copyright (c) 2023 Fayaz Bin Salam
+MIT License — Copyright (c) 2023 Fayaz Bin Salam. See [LICENSE](LICENSE) for the full text.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Contributing
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Contributions are warmly welcomed and greatly appreciated! Whether it's a bug fix, new feature, or improvement, your input helps make this project better for everyone.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+Before submitting a pull request, please:
+
+1. Create an issue describing the feature or bug fix you'd like to work on
+2. Wait for discussion and approval to ensure alignment with project goals
+3. Fork the repository and create your feature branch
+4. Submit your pull request with a clear description of changes
+
+This approach helps avoid duplicate efforts and ensures smooth collaboration. Thank you for considering contributing!
+
+## Share
+
+Sharing this repository with your friends is just one click away from here
+
+[![facebook](https://user-images.githubusercontent.com/6418354/179013321-ac1d1452-0689-493f-9066-940cf2302b6e.png)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/p32929/google-calender-widget/)
+[![twitter](https://user-images.githubusercontent.com/6418354/179013351-7d8d6d1c-4ce2-46ab-bef8-4c4765a1b888.png)](https://twitter.com/intent/tweet?url=https://github.com/p32929/google-calender-widget/)
+[![tumblr](https://user-images.githubusercontent.com/6418354/179013343-3111f55a-3b90-40c7-8487-9777348672b0.png)](https://www.tumblr.com/share?v=3&u=https://github.com/p32929/google-calender-widget/)
+[![pocket](https://user-images.githubusercontent.com/6418354/179013334-b095c45f-becf-49f4-9ee1-5a731a9b1f85.png)](https://getpocket.com/save?url=https://github.com/p32929/google-calender-widget/)
+[![pinterest](https://user-images.githubusercontent.com/6418354/179013331-44cd9206-11b1-4b65-becb-5863b61c828f.png)](https://pinterest.com/pin/create/button/?url=https://github.com/p32929/google-calender-widget/)
+[![reddit](https://user-images.githubusercontent.com/6418354/179013338-7416ae3f-73ba-4522-86e1-1374d7082d22.png)](https://www.reddit.com/submit?url=https://github.com/p32929/google-calender-widget/)
+[![linkedin](https://user-images.githubusercontent.com/6418354/179013327-ca7b7102-1da8-4b1c-858f-1a6e5f21bd70.png)](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/p32929/google-calender-widget/)
+[![whatsapp](https://user-images.githubusercontent.com/6418354/179013353-f477fa0b-3e6f-4138-a357-c9991b23ff88.png)](https://api.whatsapp.com/send?text=https://github.com/p32929/google-calender-widget/)
 
 ---
 
